@@ -68,6 +68,13 @@ type TaggedWord struct {
 	byteStart int
 }
 
+func (tw TaggedWord) GetWord() string {
+    return tw.word
+}
+func (tw TaggedWord) GetTag() string {
+    return tw.tag
+}
+
 // three variable structure used in DFA translation
 type Tri struct {
 	state int
